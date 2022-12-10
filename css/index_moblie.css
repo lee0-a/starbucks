@@ -19,28 +19,36 @@ header>div .spot{right: 4.5rem; top: 1.3rem;}
 
 .visual div{width: 100%;}
 .visual img{width: 100%;}
-.visual div .img1{left:1rem; width: 54%; min-width: 12rem;}
+.visual div .img1{left:1rem; width: 30%; min-width: 12rem;}
 .visual div .img2 {
-    top: 60%;
-    width: 55%;
+    top: 65%;
+    width: 31%;
     max-width: 31rem;
-    left: 51%;
+    left: 33%;
 }
 .visual div .img3 {
-    width: 36%;
+    width: 26%;
     max-width: 27rem;
-    top: 48%;
-    left: 43%;
+    top: 63%;
+    left: 62%;
 }
 .visual div .img4 {
-    width: 35%;
+    width: 27%;
     max-width: 29rem;
-    top: 67%;
-    left: 8%;
+    top: 34%;
+    left: 38%;
+}
+.visual div .img5 {
+    width: 30%;
+    max-width: 29rem;
+    top: 30%;
+    left: 65%;
 }
 
-.rewards>div{width: 100%;}
 
+.rewards>div{width: 100%;}
+.rewards .info_top{display: block;}
+.rewards .btm{display: block;}
 
 
 

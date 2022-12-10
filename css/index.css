@@ -3,7 +3,7 @@
 html{font-size: 20px;}
 body{font-size: 1rem; color: #333;}
 a{text-decoration: none; color: #333;}
-header{height:5rem; background-color: #f6f5ef; border-top: 2px solid #222; border-bottom: 2px solid #222;}
+header{height:5rem; background-color: #f6f5ef;}
 header>div{width: 54.5rem; height: 100%; margin:0 auto; position: relative;
 display: flex; justify-content: space-between; align-items: center; padding-top: .6rem;}
 header>div .spot{position: absolute; right: 1.1rem; top:0.3rem; display: flex; justify-content: space-between; }
@@ -20,17 +20,60 @@ header>div .spot li:last-child a:before{content: "\e97a"; font-family: 'xeicon';
 header>div .spot i{display: none;}    
 header .total{display: none;}
 
-.visual{background: url(../img/bg_visual.jpg) no-repeat center top; height: 646px; position: relative;}
+.visual{background: url(../img/Chrisma2_BG.png) no-repeat center top; height: 646px; position: relative;}
 .visual>div{position:relative; width: 100%; max-width:54.5rem; height:32.3rem; margin: 0 auto;}
 .visual>div div{position: absolute;}
-.visual .img1{top: 4rem;}
+.visual .img1{top: 12rem; width: 34%;}
 .visual .img1 img{display: block; padding-bottom: 2.3rem;}
-.visual .img1 a{display: inline-block; border: 2px solid #3a62ad; text-align: center; line-height: 1.7rem;
-border-radius: 3px; font-size: .65rem; color: #3a62ad; width: 6rem;}
+.visual .img1 a{display: inline-block; border: 2px solid #fff; text-align: center; line-height: 1.7rem;
+border-radius: 3px; font-size: .65rem; color: #fff; width: 6rem; margin-left: 6rem; transition: background-color .7s, color .7s;}
+.visual .img1 a:hover{background-color: #fff; color: #333;}
 
-.visual .img3{left: 50%; top: 3.8rem;}
-.visual .img4{left: 63%; top: 15.75rem; z-index: 2;}
-.visual .img2{left: 16%; top: 8.7rem; z-index: 1;}
+.visual .img3{left: 33rem; top: 15rem; width: 24%; z-index: 2;}
+.visual .img4{left:21rem ; top:7rem ; z-index: 1;width: 26%;}
+.visual .img2{left:19rem; top: 15rem; z-index: 2; width: 29%}
+.visual .img5{left: 38rem; top: 8rem; z-index: 1; width: 28%;}
+.visual .img1 img, .visual .img2 img, .visual .img3 img, .visual .img4 img, .visual .img5 img{width: 100%;}
+
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade_in {
+   opacity:0;  
+   animation:fadeIn ease-in 1;
+   animation-fill-mode:forwards;
+   animation-duration:1.5s;
+  }
+  @keyframes fadeIn02 { from { opacity:0; } to { opacity:1; } }
+ 
+.fade_in02 {
+   opacity:0;  
+   animation:fadeIn ease-in 1;
+   animation-fill-mode:forwards;
+   animation-duration:2s;
+  }
+
+  @keyframes fadeIn03 { from { opacity:0; } to { opacity:1; } }
+ 
+.fade_in03 {
+   opacity:0;  
+   animation:fadeIn ease-in 1;
+   animation-fill-mode:forwards;
+   animation-duration:2.5s;
+  }
+
+  @keyframes fadeIn04 { from { opacity:0; } to { opacity:1; } }
+ 
+.fade_in04 {
+   opacity:0;  
+   animation:fadeIn ease-in 1;
+   animation-fill-mode:forwards;
+   animation-duration:3s;
+  }
+
+
+
+
 
 .bar{width: 100%; height: 3.5rem; background: linear-gradient(to right, #111, #272727 60%,  #fff 60%, #fff);}
 .bar>div{width: 54.5rem; margin: 0 auto; display: flex; justify-content: space-around;
@@ -42,30 +85,32 @@ align-items: center; height: 100%; }
 
 
 
-.rewards{background:linear-gradient(to right, #272727, #272727 30%,  #d6c798 30%, #d6c798);}
-.rewards>div{width: 54.5rem; margin:0 auto; display: flex;  position: relative;}
+.rewards{background:#1e3932;}
+.rewards>div{width: 54.5rem; margin:0 auto; display: flex;  position: relative; }
 
-.rewards h2{position:absolute; display:flex; align-items: center; width:21rem; height:13rem; 
-background:url(../img/bg_star.png) no-repeat ; background-size: 17rem; padding-left: 1rem;
-}
-.rewards h2 img{width: 45%;}  
+.rewards h2{position:absolute; width:18%; padding:3rem 0 0 1rem;}
+.rewards h2 img{width: 100%;}  
 
-.rewards .info{padding:2rem 0 0 17.5rem; height:13rem; background: url(../img/bg_dot.png) no-repeat left bottom #d6c798; }
+.rewards .info{padding:3rem 0 0 12rem; height:13rem; color: #fff;}
 .rewards .info span{display:block; padding-bottom:.6rem; font-size: 1.15rem; line-height: 100%; letter-spacing: -1.5px;}
-.rewards .info p{font-size: .7rem; color: #666; line-height: 1.1rem; letter-spacing: -0.5px;}
-.rewards .left{float: left;}
-.rewards .right{float: right;}
-.rewards .btm{clear:both; padding-top:1.7rem;}
-.rewards .btm .btn{width: 13rem;}
+.rewards .info p{padding-right:2rem; font-size: .7rem; color: #fff; line-height: 1.1rem; letter-spacing: -0.5px;}
+.rewards .info .m_br{display: none;}
+.rewards .info_top{display: flex; justify-content: space-between;}
+.rewards .btm{display: flex; justify-content: space-between; padding-top:1.7rem;}
+.rewards .btm .btn{width: 10rem;}
 .rewards .top_btn{padding-top: 1.7rem;}
 .rewards .top_btn a:first-child{margin-right:.25rem;}
 
-.btn{display: inline-block; height: 1.9rem; min-width: 6.45rem; line-height: 1.9rem; text-align:center;
-font-size: .7rem; color: #222;
-border: 2px solid #222; border-radius: 3px;}
-.btn.type1{background: #222; color: #fff;}
+.btn{display: inline-block; height: 1.9rem; min-width: 5rem; line-height: 1.9rem; text-align:center;
+font-size: .7rem; color: #fff;
+border: 2px solid #fff; border-radius: 3px;}
+.btn.type1{background: #00704a; color: #fff; border: 2px solid #00704a; border-radius: 3px;}
 
-.main-bean_wrap{background: url(../img/christmas_bean_bg_002_02.jpg) no-repeat center top; width: 100%; height:28rem; overflow: hidden;}
+.main-bean_wrap{background: url(../img/christmas_bean_bg_002_02.jpg) no-repeat center top; width: 100%; height:28rem; overflow: hidden; position: relative;}
+.main-bean_wrap::before{content:""; position:absolute; width: 234px;
+height: 234px;background: url(../img/2022_christmas_bean_bg_star_left.png) no-repeat left bottom; left: 0; bottom: 0;}
+.main-bean_wrap::after{content:""; position:absolute; width: 234px;
+    height: 234px;background: url(../img/2022_christmas_bean_bg_star_right.png) no-repeat right bottom; right: 0; bottom: 0;}
 .main-bean_inner{width: 54.5rem; margin: 0 auto; height: 100%; position: relative;}
 .main-bean_inner .bean_img_box{position: absolute; top: 15%; left: 0; z-index:6;}
 .main-bean_inner .bean_txt_box{position: absolute; top: 35%; right: 8.5%; z-index:6;}
@@ -83,16 +128,16 @@ border: 2px solid #222; border-radius: 3px;}
 .reserve_btn_wrap a:hover{background-color: #b9813d;; color: #fff;}
 
 .favWrap{background: url(../img/Chrismas2_PTF_bg.png) no-repeat center center fixed #45434c; background-size:auto 100%;
-height: 40rem; position: relative;}
+height: 40rem; position: relative; overflow: hidden;}
 .winter_inner{width: 54.5rem; height: 100%; margin: 0 auto; position: relative;}
 .winter_title{background: url(../img/fav_prod_txt01.png) no-repeat; text-indent: -20000px; position: absolute;
-z-index: 7; height: 204px; left: 200px; overflow: hidden; top: 120px; width: 258px;}
+z-index: 7; height: 204px; left: 105px; overflow: hidden; top: 120px; width: 258px;}
 .winter_txt_box{background: url(../img/fav_prod_txt02.png) no-repeat; text-indent: -20000px; position: absolute;
-    z-index: 7; height: 204px; left: 91px; overflow: hidden; top: 400px; width: 361px;}
-.winter_btn{position: absolute; top: 30rem; left: 16rem; }
+    z-index: 7; height: 204px; left: 0; overflow: hidden; top: 400px; width: 361px;}
+.winter_btn{position: absolute; top: 30rem; left: 12rem; }
 .winter_btn a{color: #fff;font-size: .8rem; border: 2px solid #fff; border-radius: 3px; padding: 0.3rem .8rem;transition:background-color .7s, color .7s;}
 .winter_btn a:hover{background-color: #fff; color: #222;}
-
+.winter_inner .winter_img_box{background: url(../img/Chrismas2_PTF.png) no-repeat; z-index: 8; width: 48rem; height: 30rem; right:-277px; top: 6rem; position: absolute;}
 
 
 .reserve_magazine_wrap{width: 100%;height: 20rem;}

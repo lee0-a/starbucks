@@ -13,14 +13,16 @@ header>div h1{padding-left: 1rem;}
 
 
 .rewards>div{width: 100%;}
-.rewards h2{height:16.75rem;background-size: 22rem; width: 22rem; padding-left: 3rem;}
-.rewards h2 img{width: 50%;}  
+.rewards h2{padding-left: 3rem; min-width: 30%;}
+
 .rewards .info{height: 16.75rem; padding:1.2rem 0 0 23.5rem ;}
-.rewards .left{float: none;}
-.rewards .right{float: none; padding-top: .7rem;}
+.rewards .info_top{display: block;}
+.rewards .btm{display: block;}
+.rewards .right{padding-top: .7rem;}
 .rewards .top_btn {padding-top: 0.7rem;}
 .rewards .btm{padding-top: 1rem;}
-
+.rewards .info .m_br{display: block;}
+.rewards .info .pc_br{display: none;}
 
 
 
