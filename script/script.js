@@ -68,6 +68,21 @@ if (myWindow > 1104) {
 
 
 
+$('header > div > nav > ul > li > h2 > a').bind('mouseover focus', function (e) {
+    $('header > div > nav > ul > li > h2 > a').removeClass('on');
+    $('.sub_wrap').hide();
 
+    $(this).addClass('on');
+    $(this).parent().next().stop(true, true).slideDown();
+
+    e.preventDefault();
+  });
+
+  $('.sub_inner').bind('mouseleave', function () {
+    $('header > div > nav > ul > li > h2 > a').removeClass('on');
+    $('.sub_wrap').slideUp();
+  });
+
+ 
 });
 

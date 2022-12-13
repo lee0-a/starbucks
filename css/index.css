@@ -3,12 +3,22 @@
 html{font-size: 20px;}
 body{font-size: 1rem; color: #333;}
 a{text-decoration: none; color: #333;}
-header{height:5rem; background-color: #f6f5ef;}
-header>div{width: 54.5rem; height: 100%; margin:0 auto; position: relative;
-display: flex; justify-content: space-between; align-items: center; padding-top: .6rem;}
-header>div .spot{position: absolute; right: 1.1rem; top:0.3rem; display: flex; justify-content: space-between; }
-header>div nav ul{display: flex; justify-content: space-between;}
-header>div nav ul li a{font-size: .7rem; padding: .75rem 1.25rem;}
+header{width:100%;height:5rem; background-color: #f6f5ef; position: relative; position: fixed; z-index: 100;}
+header>div{width: 54.5rem; height: 100%; margin:0 auto; 
+display: flex; justify-content: space-between; align-items: center; padding-top: .66rem;}
+header>div .spot{position: absolute; right: 12rem; top:0.3rem; display: flex; justify-content: space-between; }
+header>div>nav>ul{display: flex; justify-content: space-between;}
+
+header>div>nav>ul>li>h2>a{font-size: .7rem; padding: .5rem 1.25rem 1.25rem 1.6rem;}
+header>div>nav>ul>li>h2>a:hover{color: #fff; background-color: #2C2A29;}
+header>div nav .sub_wrap{width:100%; padding: 1rem 0; z-index: 99; position: absolute; top: 4.85rem; left: 0;
+font-size: .6rem; background-color: #2C2A29;display: none;}
+header>div nav .sub_wrap .sub_inner{width: 54.5rem; margin: 0 auto; height: 100%; display: flex;
+justify-content: space-between; }
+header>div nav .sub_wrap .sub_inner ul{text-align: start;}
+header>div nav .sub_wrap .sub_inner ul li{line-height: 1.2rem;}
+header>div nav .sub_wrap .sub_inner ul li a{color: #888; font-size: .6rem; display: inline-block;}
+header>div nav .sub_wrap .sub_inner .sub_ttl>a{font-size:.7rem; color: #fff;}
 header>div .spot li{position: relative;}
 header>div .spot li a{font-size: .6rem; padding: 0 .75rem;}
 header>div .spot li~li a::after{content: ""; position: absolute; left: 0; top:50%; width:1px;
@@ -19,6 +29,8 @@ height: 1.7rem; background-color: #fff; border: 1px solid #ccc; text-align:cente
 header>div .spot li:last-child a:before{content: "\e97a"; font-family: 'xeicon'; font-size: 1.2rem; color: #222;}
 header>div .spot i{display: none;}    
 header .total{display: none;}
+
+.layer_floating{position: fixed; top: 10rem; right: 3rem; z-index: 90;}
 
 .visual{background: url(../img/Chrisma2_BG.png) no-repeat center top; height: 646px; position: relative;}
 .visual>div{position:relative; width: 100%; max-width:54.5rem; height:32.3rem; margin: 0 auto;}
@@ -164,14 +176,14 @@ footer{width: 100%;  background-color: #2C2A29;}
 .footer_awards{background:#282828; margin-top: 2rem;}
 .footer_awards_inner{width: 59.1rem; height:4rem; margin: 0 auto;}
 .footer_awards_inner ul{height:100%; display: flex; justify-content: space-between; align-items: center;}
-.footer_copy{width: 59.1rem; margin: 0 auto; color: #fff; font-size: .6rem;}
+.footer_copy{width: 50rem; margin: 0 auto; color: #fff; font-size: .6rem; margin-top: 2rem;}
 .footer_copy ul{display: flex;}
 .footer_copy ul li a{color: #fff;}
-.footer_copy_box01{justify-content: space-between;}
-.footer_copy_box02{justify-content: space-around;}
-
-
-
+.footer_copy_box01{justify-content: space-between; margin-bottom: 1.5rem;}
+.footer_copy_box01 ul li::after{content: ""; position: absolute;}
+.footer_copy_box02{justify-content: space-around; width: 20rem; margin: 0 auto; margin-bottom: 1.5rem;}
+.footer_copy .copy{text-align: center; height: 4rem; line-height: 1.5rem;}
+.footer_copy_box02 li{border: 2px solid #fff; padding: .3rem .6rem; border-radius: 3px;}
 
 
 
