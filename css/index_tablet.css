@@ -24,9 +24,10 @@ header>div h1{padding-left: 1rem;}
 .rewards .info .m_br{display: block;}
 .rewards .info .pc_br{display: none;}
 
+.store_inner .store_img04{display: none;}
 
-
-
+.footer_nav{vertical-align: baseline;}
+.footer_awards_inner ul li img{width: 100%;}
 
 
 
