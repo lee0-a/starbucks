@@ -27,6 +27,7 @@ header>div h1{padding-left: 1rem;}
 .store_inner .store_img04{display: none;}
 
 .footer_nav{vertical-align: baseline;}
+.footer_awards_inner ul{justify-content: flex-start;}
 .footer_awards_inner ul li img{width: 100%;}
 
 
