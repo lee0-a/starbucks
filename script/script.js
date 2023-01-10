@@ -1,15 +1,15 @@
 $(document).ready(function(){
-    var myWindow = $(window).width();
+    let myWindow = $(window).width();
 
 
 //Bean
-var controller = $.superscrollorama({
+let controller = $.superscrollorama({
     triggerAtCenter: true
 });
 
 if (myWindow > 1104) {
 
-    var controller = $.superscrollorama();
+    let controller = $.superscrollorama();
 
     
 
@@ -20,7 +20,7 @@ if (myWindow > 1104) {
 
 } else if ((myWindow > 960)) {
 
-    var controller = $.superscrollorama();
+    let controller = $.superscrollorama();
 
     controller.addTween(10, TweenMax.from($('.bean_img_box'), 2.5, {css:{left:'-50%', opacity:0}, ease: Quad.easeOut}), 1, 1000);
     controller.addTween(10, TweenMax.to($('.bean_img_box'), 2.5, {css:{left:'0', opacity:1}, ease: Quad.easeOut}), 1, 1000);
@@ -29,11 +29,11 @@ if (myWindow > 1104) {
 };
 
 
-var controller = $.superscrollorama({
+let controller = $.superscrollorama({
     triggerAtCenter: true
 });
 
-var controller = $.superscrollorama();
+let controller = $.superscrollorama();
 
 controller.addTween(10, TweenMax.from($('.reserve_visual'), 2.5, {css:{opacity:0}, ease: Quad.easeOut}), 1, 1000);
 controller.addTween(10, TweenMax.to($('.reserve_visual'), 2.5, {css:{opacity:1}, ease: Quad.easeOut}), 1, 1000);
@@ -41,13 +41,13 @@ controller.addTween(10, TweenMax.to($('.reserve_visual'), 2.5, {css:{opacity:1},
 
 
 //favWrap
-var controller = $.superscrollorama({
+let controller = $.superscrollorama({
     triggerAtCenter: true
 });
 
 if (myWindow > 1104) {
 
-    var controller = $.superscrollorama();
+    let controller = $.superscrollorama();
 
     
 
@@ -58,7 +58,7 @@ if (myWindow > 1104) {
 
 } else if ((myWindow > 960)) {
 
-    var controller = $.superscrollorama();
+    let controller = $.superscrollorama();
 
     controller.addTween(10, TweenMax.from($('.winter_title'), 2.5, {css:{left:'-50%', opacity:0}, ease: Quad.easeOut}), 1, 1000);
     controller.addTween(10, TweenMax.to($('.winter_title'), 2.5, {css:{left:'0', opacity:1}, ease: Quad.easeOut}), 1, 1000);
